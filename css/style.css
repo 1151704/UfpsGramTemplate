@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    padding-top: 0;
+}
+
+.page-footer .footer-copyright {
+    overflow: visible;
+    background-color: transparent;
+}
+
+.item-active {
+    position: relative;
+}
+
+.item-active::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -30px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #009688;
+}
