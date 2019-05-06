@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/helper.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ufpsgram - usuario</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div>
+        <nav class="teal ">
+            <div class="nav-wrapper container ">
+                <a href="inicio.html" class="brand-logo">Ufpsgram</a>
+                <ul class="right">
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown1"><i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a class="modal-trigger pointer" href="#modal-perfil">Cuenta <i class="material-icons">settings</i></a></li>
+            <li class="divider"></li>
+            <li><a href="index.html">Cerrar sessión <i class="material-icons">power_settings_new</i></a></li>
+        </ul>
+    </div>
+    <main class="container">
+        <div class="row valign-wrapper mb0 ">
+            <ul class="collection col s12 grey lighten-5 z-depth-1">
+                <li class="collection-item avatar user-avatar">
+                    <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Username</span>
+                    <div class="row mb0">
+                        <div class="col s4 center">
+                            <span>0</span>
+                            <p>Publicaciones</p>
+                        </div>
+                        <div class="col s4 center">
+                            <span class="modal-trigger pointer" href="#modal-seguidores">0</span>
+                            <p>Seguidores</p>
+                        </div>
+                        <div class="col s4 center">
+                            <span class="modal-trigger pointer" href="#modal-siguiendo">0</span>
+                            <p>Siguiendo</p>
+                        </div>
+                    </div>
+                    <p style="transform: translateX(-72px);">Nombre de usuario</p>
+                    <blockquote class="teal" style="transform: translateX(-72px);">Bibliografia</blockquote>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <h5 class="title center">Publicaciones</h5>
+            <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper mb0">
+                        <ul class="collection mb0 mt0 col s12">
+                            <li class="collection-item avatar user-avatar">
+                                <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+                                <span class="title">Username</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s12">
+                            <span>Descripción</span>
+                        </div>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s12">
+                            <div class="materialboxed">
+                                <div class="center-align">
+                                    <img src="https://materializecss.com/images/yuna.jpg" alt=""
+                                        class="rounded responsive-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s12">
+                            <span class="fx-inline">
+                                <a class="red-text"><i class="material-icons">favorite</i></a>
+                                <span>112</span>
+                            </span>
+                            <a class="blue-grey-text"><i class="material-icons">favorite_border</i></a>
+                            <span class="fx-inline">
+                                <a class="blue-grey-text"><i class="material-icons">comment</i></a>
+                                <span>3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s12">
+                            <ul class="collection mb0 mt0">
+                                <li class="collection-item avatar">
+                                    <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+                                    <span class="title">Username</span>
+                                    <p>Comentario</p>
+                                    <span>4 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal-seguidores" class="modal">
+        <div class="modal-content">
+            <h4 class="center">Seguidores</h4>
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Usuario</span>
+                    <p>Nombre de usuario</p>
+                    <div class="secondary-content ">
+                        <a class="blue-grey waves-effect waves-light btn-small">Siguiendo</a>
+                        <a class="waves-effect waves-light btn-small">Seguir</a>
+                    </div>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Usuario</span>
+                    <p>Nombre de usuario</p>
+                    <div class="secondary-content ">
+                        <a class="blue-grey waves-effect waves-light btn-small">Siguiendo</a>
+                        <a class="waves-effect waves-light btn-small">Seguir</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-light btn-flat">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="modal-siguiendo" class="modal">
+        <div class="modal-content">
+            <h4 class="center">Siguiendo</h4>
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Usuario</span>
+                    <p>Nombre de usuario</p>
+                    <div class="secondary-content ">
+                        <a class="blue-grey waves-effect waves-light btn-small">Siguiendo</a>
+                        <a class="waves-effect waves-light btn-small">Seguir</a>
+                    </div>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Usuario</span>
+                    <p>Nombre de usuario</p>
+                    <div class="secondary-content ">
+                        <a class="blue-grey waves-effect waves-light btn-small">Siguiendo</a>
+                        <a class="waves-effect waves-light btn-small">Seguir</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-light btn-flat">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="modal-perfil" class="modal">
+        <div class="modal-content">
+            <h4 class="center">Perfil</h4>
+            <div class="row">
+                <form class="col s12 m6 offset-m3">
+                    <div class="row mb0">
+                        <div class="input-field col s12">
+                            <input placeholder="Nombre completo" id="name" type="text" class="validate">
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Correo electronico" id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Nombre de usuario" id="username" type="text" class="validate">
+                            <label for="username">Usuario</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Contraseña de usuario" id="password" type="text" class="validate">
+                            <label for="password">Contraseña</label>
+                        </div>
+                        <div class="col s12 center">
+                            <button type="submit" class="waves-effect waves-light btn">Guardar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer teal">
+        <div class="footer-copyright">
+            <div class="container ">
+                <div class="row mb0">
+                    <a class="col s3 center white-text" href="inicio.html">
+                        <i class="material-icons">view_day</i>
+                    </a>
+                    <a class="col s3 center white-text" href="buscar.html">
+                        <i class="material-icons">search</i>
+                    </a>
+                    <a class="col s3 center white-text" href="solicitudes.html">
+                        <i class="material-icons">people</i>
+                    </a>
+                    <a class="col s3 center white-text item-active" href="cuenta.html">
+                        <i class="material-icons">account_circle</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

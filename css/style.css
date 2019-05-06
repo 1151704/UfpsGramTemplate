@@ -27,7 +27,25 @@ main {
     width: 20px;
     height: 20px;
     top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
     border-bottom: 10px solid #009688;
+}
+
+.fx-inline {
+    display: inline-flex;
+}
+
+.user-avatar {
+    min-height: 62px!important;
+}
+blockquote.teal {
+    border-left: 5px solid #009688;
+    background-color: transparent!important;
+}
+
+.pointer {
+    cursor: pointer;
 }
